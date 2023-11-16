@@ -6,19 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Taseen Rahman</title>
         <link rel="stylesheet" href="CSS/style.css">
+        <script src="https://kit.fontawesome.com/d7ac14ee54.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="Images/Gabriel-Leblanc-Historic-Mac-Xserve.512.png" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <img src="Images/tkr-tech-logo-transparent-2.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Computer Science Student</p>
@@ -27,19 +30,181 @@
             </div>
         </div>
         <div>
-            ----------about----------
+            <!----------about---------->
         </div>
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="Images/Gabriel-Leblanc-Historic-Mac-Xserve.512.png">
+                        <img src="Images/Taseen.jpg">
                     </div>
                     <div class="about-col-2">
-                        <h1>About Me</h1>
+                        <h1 class="subtitle">About Me</h1>
+                        <p>descefaeh osahdoah wgaid howuh sf uhdifus hwyg wsgfiy. Ysdh hwsdi hwuig shfiu qwbf ouas, gfwiyagf iug fhuwoa ghsfiyg wgiyg
+                            iauwgf hofuwaho sufdhfu. Agiougfsdaugfwuhsdbgf giusaf uhy ifwg giwg fb ihsafod. Gugiayegfi ihofiw - fgwiagfs gufowaugfh; hfowuah hufo
+                            fwhaosuh fhwipoj shwipfjnsoi.
+                        </p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Developing Software</li>
+                                <li><span>Java</span><br>Developing Software</li>
+                                <li><span>HTML</span><br>Developing Software</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Vue Cinema</span><br>Customer Assistant</li>
+                                <li><span>Soundstage Hi-Fi</span><br>Web Developer</li>
+                                <li><span>Smart Home Consultant</span><br>Developing Dashboards</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2025</span><br>Comp Sci Student @ QMUL</li>
+                                <li><span>2020-2022</span><br>A-levels (maths, comp sci, physics) at Ashmole academy</li>
+                                <li><span>2015-2020</span><br>GCSE's at Ashmole Academy</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-----------Projects----------->
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-house-signal"></i>
+                        <h2>Smart Home</h2>
+                        <p>asfdasif dfyidgifasgdf iasd 8asytdusaygdusad d wtdi s </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house-signal"></i>
+                        <h2>Smart Home 2</h2>
+                        <p>asfdasif dfyidgifasgdf iasd 8asytdusaygdusad d wtdi s </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house-signal"></i>
+                        <h2>Smart Home 3</h2>
+                        <p>asfdasif dfyidgifasgdf iasd 8asytdusaygdusad d wtdi s </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------Portfolio---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/Gabriel-Leblanc-Historic-Mac-Xserve.512.png" alt="">
+                        <div class="layer">
+                            <h3>Smart Home</h3>
+                            <p>ajhsdiuh awgdiwa asgdi w uiwsd gs wgi dwwds.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Gabriel-Leblanc-Historic-Mac-Xserve.512.png" alt="">
+                        <div class="layer">
+                            <h3>Smart Home 2</h3>
+                            <p>ajhsdiuh awgdiwa asgdi w uiwsd gs wgi dwwds.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Gabriel-Leblanc-Historic-Mac-Xserve.512.png" alt="">
+                        <div class="layer">
+                            <h3>Smart Home 3</h3>
+                            <p>ajhsdiuh awgdiwa asgdi w uiwsd gs wgi dwwds.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>taseen.rahman7@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>(+44) 7482999002</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Taseen18"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright Taseen Rahman</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+        </script>
+        <script>
+            
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz8xZjZ7R0XbvTySNa92pVIVLQ10F5YiSFs6nwtQJespsPlX-g9jM5T0YKrcPKG7t0j/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
