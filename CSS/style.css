@@ -21,6 +21,10 @@ body{
     background-size: cover;
     background-position: center;
 }
+#header p{
+    font-family: 'Roboto Mono', monospace;
+}
+
 .container{
     padding: 10px 10%;
 }
@@ -151,9 +155,10 @@ nav ul li a:hover::after{
 
 
 
-/*---------Projects---------*/
+/*---------Projects/services---------*/
 #projects{
     padding: 30px 0;
+    display: none; /*--UNCOMMENT TO UNHIDE--*/
 }
 .projects-list{
     display: grid;
@@ -218,6 +223,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: fill;
 }
 
 .layer{
