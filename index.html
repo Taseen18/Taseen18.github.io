@@ -14,24 +14,48 @@
   <main>
     <div class="gallery" id="gallery"></div>
   </main>
+  <div id="photoModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Modal Photo">
+    <div id="caption"></div>
+  </div>
   <footer>
     <p>© 2024 Taseen Kamil Rahman. All rights reserved.</p>
   </footer>
 
-
   <script>
     const gallery = document.getElementById('gallery');
-    const username = 'Taseen18';
-    const repo = 'Taseen18.github.io';
-    const baseDir = 'photos';
-  
-    // Fetch the contents of a directory
-    async function fetchDirectoryContents(directory) {
-      const apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/${directory}`;
+    const modal = document.getElementById('photoModal');
+    const modalImg = document.getElementById('modalImage');
+    const captionText = document.getElementById('caption');
+    const closeModal = document.querySelector('.close');
+
+    gallery.addEventListener('click', (event) => {
+      if (event.target.tagName === 'IMG') {
+        modal.style.display = 'block';
+        modalImg.src = event.target.src;
+        captionText.innerHTML = event.target.alt;
+      }
+    });
+
+    // Close the modal when the close button is clicked
+    closeModal.onclick = () => {
+      modal.style.display = 'none';
+    };
+
+    // Close the modal when clicking outside the image
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    // Fetch the photos.json file and return the list of photos
+    async function fetchPhotoList() {
       try {
-        const response = await fetch(apiUrl);
+        const response = await fetch('photos.json');
         if (!response.ok) {
-          throw new Error(`Failed to fetch directory: ${directory}`);
+          throw new Error('Failed to fetch photos.json');
         }
         return await response.json();
       } catch (error) {
@@ -39,38 +63,21 @@
         return [];
       }
     }
-  
-    // Recursively fetch all photos from directories
-    async function fetchAllPhotos(directory) {
-      const contents = await fetchDirectoryContents(directory);
-      let photos = [];
-  
-      for (const item of contents) {
-        if (item.type === 'file' && /\.(jpg|jpeg|png|gif)$/i.test(item.name)) {
-          // If it's a file and an image, add it to the list
-          photos.push(item.path);
-        } else if (item.type === 'dir') {
-          // If it's a directory, fetch its contents recursively
-          const subPhotos = await fetchAllPhotos(item.path);
-          photos = photos.concat(subPhotos);
-        }
-      }
-      return photos;
-    }
-  
+
     // Populate the gallery with images
     async function populateGallery() {
-      const photos = await fetchAllPhotos(baseDir);
+      const photos = await fetchPhotoList();
       photos.forEach(photo => {
         const img = document.createElement('img');
-        img.src = `https://raw.githubusercontent.com/${username}/${repo}/main/${photo}`;
+        img.src = photo; // Relative path to the photo
         img.alt = 'Photography by Taseen';
+        img.loading = 'lazy'; // Enable lazy loading
         gallery.appendChild(img);
       });
     }
-  
+
+    // Load the gallery
     populateGallery();
   </script>
-  
 </body>
 </html>
