@@ -1,29 +1,47 @@
 import os
 import json
 
-# Directory containing your photos
+# Directories
 photos_directory = "photos"
+compressed_directory = "compressed"
 output_file = "photos.json"
 
 # Supported image file extensions
 image_extensions = {".jpg", ".jpeg", ".png", ".gif"}
 
-def generate_photos_json(directory, output):
+def generate_photos_json(original_dir, compressed_dir, output):
     photos = []
 
-    # Walk through the directory and its subdirectories
-    for root, _, files in os.walk(directory):
+    # Get a list of compressed files
+    compressed_files = {os.path.basename(f): os.path.join(compressed_dir, f).replace("\\", "/")
+                        for f in os.listdir(compressed_dir) if os.path.splitext(f)[1].lower() in image_extensions}
+
+    # Walk through the original directory to find full-resolution files
+    for root, _, files in os.walk(original_dir):
         for file in files:
-            # Check if the file has a valid image extension
             if os.path.splitext(file)[1].lower() in image_extensions:
-                # Get the relative path of the file
-                relative_path = os.path.join(root, file).replace("\\", "/")
-                photos.append(relative_path)
+                # Full-resolution image path
+                full_path = os.path.join(root, file).replace("\\", "/")
+                
+                # Look for corresponding compressed image
+                compressed_path = compressed_files.get(file)
+
+                if compressed_path:
+                    photos.append({
+                        "full": full_path,
+                        "compressed": compressed_path
+                    })
+                else:
+                    print(f"Warning: No compressed version found for {file}")
 
     # Write the list of photos to a JSON file
     with open(output, "w") as json_file:
         json.dump(photos, json_file, indent=4)
     print(f"Generated {output} with {len(photos)} photos.")
 
-# Run the script
-generate_photos_json(photos_directory, output_file)
+# Ensure the compressed directory exists
+if not os.path.exists(compressed_directory):
+    print(f"Error: Compressed directory '{compressed_directory}' does not exist.")
+else:
+    # Run the script
+    generate_photos_json(photos_directory, compressed_directory, output_file)

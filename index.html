@@ -8,8 +8,8 @@
 </head>
 <body>
   <header>
-    <h1>Taseen's Photography Portfolio</h1>
-    <p>Capturing moments, one shot at a time</p>
+    <h1>Singapore & Indonesia Holiday 2024</h1>
+    <p>Captured by Taseen</p>
   </header>
   <main>
     <div class="gallery" id="gallery"></div>
@@ -30,20 +30,21 @@
     const captionText = document.getElementById('caption');
     const closeModal = document.querySelector('.close');
 
+    // Event listener for opening the modal
     gallery.addEventListener('click', (event) => {
       if (event.target.tagName === 'IMG') {
         modal.style.display = 'block';
-        modalImg.src = event.target.src;
+        modalImg.src = event.target.dataset.full; // Load full-resolution image
         captionText.innerHTML = event.target.alt;
       }
     });
 
-    // Close the modal when the close button is clicked
+    // Event listener for closing the modal via the close button
     closeModal.onclick = () => {
       modal.style.display = 'none';
     };
 
-    // Close the modal when clicking outside the image
+    // Event listener for closing the modal by clicking outside the modal content
     modal.addEventListener('click', (event) => {
       if (event.target === modal) {
         modal.style.display = 'none';
@@ -64,14 +65,15 @@
       }
     }
 
-    // Populate the gallery with images
+    // Populate the gallery with compressed images
     async function populateGallery() {
       const photos = await fetchPhotoList();
       photos.forEach(photo => {
         const img = document.createElement('img');
-        img.src = photo; // Relative path to the photo
+        img.src = photo.compressed; // Use compressed version for the grid
+        img.dataset.full = photo.full; // Store full-resolution path in a data attribute
         img.alt = 'Photography by Taseen';
-        img.loading = 'lazy'; // Enable lazy loading
+        img.loading = 'lazy'; // Enable lazy loading for better performance
         gallery.appendChild(img);
       });
     }

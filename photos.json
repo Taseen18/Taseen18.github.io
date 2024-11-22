@@ -1,101 +1,394 @@
 [
-    "photos/Bali/IMG_3521.jpg",
-    "photos/Bali/IMG_3482.jpg",
-    "photos/Bali/IMG_3455.jpg",
-    "photos/Bali/IMG_3454.jpg",
-    "photos/Bali/IMG_3468.jpg",
-    "photos/Bali/IMG_3442.jpg",
-    "photos/Bali/IMG_3456.jpg",
-    "photos/Bali/IMG_3457.jpg",
-    "photos/Bali/IMG_3686.jpg",
-    "photos/Bali/IMG_3490.jpg",
-    "photos/Bali/IMG_3691.jpg",
-    "photos/Bali/IMG_3445.jpg",
-    "photos/Bali/IMG_3451.jpg",
-    "photos/Bali/IMG_3492.jpg",
-    "photos/Bali/IMG_3556.jpg",
-    "photos/Bali/IMG_3437.jpg",
-    "photos/Bali/IMG_3435.jpg",
-    "photos/Bali/IMG_3418.jpg",
-    "photos/Bali/IMG_3394.jpg",
-    "photos/Bali/IMG_3380.jpg",
-    "photos/Bali/DJI_0380.jpg",
-    "photos/Bali/IMG_3630.jpg",
-    "photos/Bali/IMG_3546.jpg",
-    "photos/Bali/IMG_3416.jpg",
-    "photos/Bali/IMG_5930.jpg",
-    "photos/Bali/IMG_3401.jpg",
-    "photos/Bali/IMG_3600-Enhanced-NR.jpg",
-    "photos/Bali/IMG_3438.jpg",
-    "photos/Bali/IMG_5934.jpg",
-    "photos/Bali/IMG_3406.jpg",
-    "photos/Bali/IMG_5947.jpg",
-    "photos/Bali/IMG_3473.jpg",
-    "photos/Bali/IMG_3511.jpg",
-    "photos/Bali/IMG_3459.jpg",
-    "photos/NorthLombok/IMG_3092.jpg",
-    "photos/NorthLombok/IMG_3079.jpg",
-    "photos/NorthLombok/DJI_0318.jpg",
-    "photos/NorthLombok/IMG_3124.jpg",
-    "photos/NorthLombok/IMG_3093.jpg",
-    "photos/NorthLombok/IMG_3331.jpg",
-    "photos/NorthLombok/DJI_0326.jpg",
-    "photos/NorthLombok/IMG_3296.jpg",
-    "photos/NorthLombok/IMG_3122.jpg",
-    "photos/NorthLombok/IMG_3081.jpg",
-    "photos/NorthLombok/IMG_3095.jpg",
-    "photos/NorthLombok/IMG_3146.jpg",
-    "photos/NorthLombok/IMG_3166.jpg",
-    "photos/NorthLombok/IMG_3171.jpg",
-    "photos/NorthLombok/DJI_0318-2.jpg",
-    "photos/NorthLombok/IMG_3202.jpg",
-    "photos/NorthLombok/IMG_3162.jpg",
-    "photos/NorthLombok/IMG_3339.jpg",
-    "photos/NorthLombok/IMG_3338.jpg",
-    "photos/NorthLombok/IMG_3300.jpg",
-    "photos/NorthLombok/IMG_3117.jpg",
-    "photos/NorthLombok/IMG_3103.jpg",
-    "photos/NorthLombok/IMG_3088.jpg",
-    "photos/SouthLombok/DJI_0293.jpg",
-    "photos/SouthLombok/IMG_2833.jpg",
-    "photos/SouthLombok/IMG_2942.jpg",
-    "photos/SouthLombok/IMG_2968.jpg",
-    "photos/SouthLombok/IMG_3069.jpg",
-    "photos/SouthLombok/IMG_2834.jpg",
-    "photos/SouthLombok/IMG_2853.jpg",
-    "photos/SouthLombok/IMG_2921.jpg",
-    "photos/SouthLombok/IMG_2922.jpg",
-    "photos/SouthLombok/IMG_2907.jpg",
-    "photos/SouthLombok/IMG_2898.jpg",
-    "photos/SouthLombok/IMG_2864.jpg",
-    "photos/SouthLombok/IMG_2862.jpg",
-    "photos/SouthLombok/IMG_2971.jpg",
-    "photos/SouthLombok/DJI_0307.jpg",
-    "photos/SouthLombok/IMG_3066.jpg",
-    "photos/SouthLombok/IMG_2963.jpg",
-    "photos/SouthLombok/DJI_0302.jpg",
-    "photos/SouthLombok/IMG_2816.jpg",
-    "photos/SouthLombok/IMG_2814.jpg",
-    "photos/Singapore/IMG_2212.jpg",
-    "photos/Singapore/IMG_2149.jpg",
-    "photos/Singapore/IMG_2516.jpg",
-    "photos/Singapore/IMG_2105.jpg",
-    "photos/Singapore/IMG_2703.jpg",
-    "photos/Singapore/IMG_2717.jpg",
-    "photos/Singapore/IMG_2129.jpg",
-    "photos/Singapore/IMG_2659.jpg",
-    "photos/Singapore/IMG_2658.jpg",
-    "photos/Singapore/IMG_2734.jpg",
-    "photos/Singapore/IMG_2250.jpg",
-    "photos/Singapore/IMG_2520.jpg",
-    "photos/Singapore/IMG_2509.jpg",
-    "photos/Singapore/IMG_2521.jpg",
-    "photos/Singapore/IMG_2119.jpg",
-    "photos/Singapore/IMG_2518.jpg",
-    "photos/Singapore/IMG_2120.jpg",
-    "photos/Singapore/IMG_2719.jpg",
-    "photos/Singapore/IMG_2227.jpg",
-    "photos/Singapore/IMG_2368.jpg",
-    "photos/Singapore/IMG_2220.jpg",
-    "photos/Singapore/IMG_2744.jpg"
+    {
+        "full": "photos/Bali/IMG_3521.jpg",
+        "compressed": "compressed/IMG_3521.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3482.jpg",
+        "compressed": "compressed/IMG_3482.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3455.jpg",
+        "compressed": "compressed/IMG_3455.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3454.jpg",
+        "compressed": "compressed/IMG_3454.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3468.jpg",
+        "compressed": "compressed/IMG_3468.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3442.jpg",
+        "compressed": "compressed/IMG_3442.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3456.jpg",
+        "compressed": "compressed/IMG_3456.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3457.jpg",
+        "compressed": "compressed/IMG_3457.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3686.jpg",
+        "compressed": "compressed/IMG_3686.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3490.jpg",
+        "compressed": "compressed/IMG_3490.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3691.jpg",
+        "compressed": "compressed/IMG_3691.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3445.jpg",
+        "compressed": "compressed/IMG_3445.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3451.jpg",
+        "compressed": "compressed/IMG_3451.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3492.jpg",
+        "compressed": "compressed/IMG_3492.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3556.jpg",
+        "compressed": "compressed/IMG_3556.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3437.jpg",
+        "compressed": "compressed/IMG_3437.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3435.jpg",
+        "compressed": "compressed/IMG_3435.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3418.jpg",
+        "compressed": "compressed/IMG_3418.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3394.jpg",
+        "compressed": "compressed/IMG_3394.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3380.jpg",
+        "compressed": "compressed/IMG_3380.jpg"
+    },
+    {
+        "full": "photos/Bali/DJI_0380.jpg",
+        "compressed": "compressed/DJI_0380.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3630.jpg",
+        "compressed": "compressed/IMG_3630.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3546.jpg",
+        "compressed": "compressed/IMG_3546.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3416.jpg",
+        "compressed": "compressed/IMG_3416.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_5930.jpg",
+        "compressed": "compressed/IMG_5930.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3401.jpg",
+        "compressed": "compressed/IMG_3401.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3600-Enhanced-NR.jpg",
+        "compressed": "compressed/IMG_3600-Enhanced-NR.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3438.jpg",
+        "compressed": "compressed/IMG_3438.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_5934.jpg",
+        "compressed": "compressed/IMG_5934.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3406.jpg",
+        "compressed": "compressed/IMG_3406.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_5947.jpg",
+        "compressed": "compressed/IMG_5947.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3473.jpg",
+        "compressed": "compressed/IMG_3473.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3511.jpg",
+        "compressed": "compressed/IMG_3511.jpg"
+    },
+    {
+        "full": "photos/Bali/IMG_3459.jpg",
+        "compressed": "compressed/IMG_3459.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3092.jpg",
+        "compressed": "compressed/IMG_3092.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3079.jpg",
+        "compressed": "compressed/IMG_3079.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/DJI_0318.jpg",
+        "compressed": "compressed/DJI_0318.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3124.jpg",
+        "compressed": "compressed/IMG_3124.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3093.jpg",
+        "compressed": "compressed/IMG_3093.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3331.jpg",
+        "compressed": "compressed/IMG_3331.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/DJI_0326.jpg",
+        "compressed": "compressed/DJI_0326.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3296.jpg",
+        "compressed": "compressed/IMG_3296.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3122.jpg",
+        "compressed": "compressed/IMG_3122.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3081.jpg",
+        "compressed": "compressed/IMG_3081.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3095.jpg",
+        "compressed": "compressed/IMG_3095.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3146.jpg",
+        "compressed": "compressed/IMG_3146.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3166.jpg",
+        "compressed": "compressed/IMG_3166.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3171.jpg",
+        "compressed": "compressed/IMG_3171.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/DJI_0318-2.jpg",
+        "compressed": "compressed/DJI_0318-2.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3202.jpg",
+        "compressed": "compressed/IMG_3202.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3162.jpg",
+        "compressed": "compressed/IMG_3162.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3339.jpg",
+        "compressed": "compressed/IMG_3339.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3338.jpg",
+        "compressed": "compressed/IMG_3338.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3300.jpg",
+        "compressed": "compressed/IMG_3300.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3117.jpg",
+        "compressed": "compressed/IMG_3117.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3103.jpg",
+        "compressed": "compressed/IMG_3103.jpg"
+    },
+    {
+        "full": "photos/NorthLombok/IMG_3088.jpg",
+        "compressed": "compressed/IMG_3088.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/DJI_0293.jpg",
+        "compressed": "compressed/DJI_0293.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2833.jpg",
+        "compressed": "compressed/IMG_2833.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2942.jpg",
+        "compressed": "compressed/IMG_2942.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2968.jpg",
+        "compressed": "compressed/IMG_2968.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_3069.jpg",
+        "compressed": "compressed/IMG_3069.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2834.jpg",
+        "compressed": "compressed/IMG_2834.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2853.jpg",
+        "compressed": "compressed/IMG_2853.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2921.jpg",
+        "compressed": "compressed/IMG_2921.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2922.jpg",
+        "compressed": "compressed/IMG_2922.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2907.jpg",
+        "compressed": "compressed/IMG_2907.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2898.jpg",
+        "compressed": "compressed/IMG_2898.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2864.jpg",
+        "compressed": "compressed/IMG_2864.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2862.jpg",
+        "compressed": "compressed/IMG_2862.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2971.jpg",
+        "compressed": "compressed/IMG_2971.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/DJI_0307.jpg",
+        "compressed": "compressed/DJI_0307.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_3066.jpg",
+        "compressed": "compressed/IMG_3066.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2963.jpg",
+        "compressed": "compressed/IMG_2963.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/DJI_0302.jpg",
+        "compressed": "compressed/DJI_0302.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2816.jpg",
+        "compressed": "compressed/IMG_2816.jpg"
+    },
+    {
+        "full": "photos/SouthLombok/IMG_2814.jpg",
+        "compressed": "compressed/IMG_2814.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2212.jpg",
+        "compressed": "compressed/IMG_2212.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2149.jpg",
+        "compressed": "compressed/IMG_2149.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2516.jpg",
+        "compressed": "compressed/IMG_2516.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2105.jpg",
+        "compressed": "compressed/IMG_2105.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2703.jpg",
+        "compressed": "compressed/IMG_2703.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2717.jpg",
+        "compressed": "compressed/IMG_2717.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2129.jpg",
+        "compressed": "compressed/IMG_2129.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2659.jpg",
+        "compressed": "compressed/IMG_2659.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2658.jpg",
+        "compressed": "compressed/IMG_2658.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2734.jpg",
+        "compressed": "compressed/IMG_2734.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2250.jpg",
+        "compressed": "compressed/IMG_2250.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2520.jpg",
+        "compressed": "compressed/IMG_2520.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2509.jpg",
+        "compressed": "compressed/IMG_2509.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2521.jpg",
+        "compressed": "compressed/IMG_2521.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2119.jpg",
+        "compressed": "compressed/IMG_2119.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2518.jpg",
+        "compressed": "compressed/IMG_2518.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2120.jpg",
+        "compressed": "compressed/IMG_2120.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2719.jpg",
+        "compressed": "compressed/IMG_2719.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2227.jpg",
+        "compressed": "compressed/IMG_2227.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2368.jpg",
+        "compressed": "compressed/IMG_2368.jpg"
+    },
+    {
+        "full": "photos/Singapore/IMG_2220.jpg",
+        "compressed": "compressed/IMG_2220.jpg"
+    }
 ]
