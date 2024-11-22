@@ -16,7 +16,8 @@
   </main>
   <div id="photoModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage" alt="Modal Photo">
+    <div class="spinner" id="spinner"></div> <!-- Loading Spinner -->
+    <img class="modal-content" id="modalImage" alt="Modal Photo" style="display: none;">
     <div id="caption"></div>
   </div>
   <footer>
@@ -27,6 +28,7 @@
     const gallery = document.getElementById('gallery');
     const modal = document.getElementById('photoModal');
     const modalImg = document.getElementById('modalImage');
+    const spinner = document.getElementById('spinner');
     const captionText = document.getElementById('caption');
     const closeModal = document.querySelector('.close');
 
@@ -34,20 +36,30 @@
     gallery.addEventListener('click', (event) => {
       if (event.target.tagName === 'IMG') {
         modal.style.display = 'block';
+        modalImg.style.display = 'none'; // Hide the image initially
+        spinner.style.display = 'block'; // Show the spinner
         modalImg.src = event.target.dataset.full; // Load full-resolution image
         captionText.innerHTML = event.target.alt;
+
+        // Wait for the image to load fully
+        modalImg.onload = () => {
+          spinner.style.display = 'none'; // Hide the spinner
+          modalImg.style.display = 'block'; // Show the image
+        };
       }
     });
 
     // Event listener for closing the modal via the close button
     closeModal.onclick = () => {
       modal.style.display = 'none';
+      modalImg.src = ''; // Clear the image source to stop loading
     };
 
     // Event listener for closing the modal by clicking outside the modal content
     modal.addEventListener('click', (event) => {
       if (event.target === modal) {
         modal.style.display = 'none';
+        modalImg.src = ''; // Clear the image source to stop loading
       }
     });
 
