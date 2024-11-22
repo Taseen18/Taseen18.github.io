@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Taseen's Photography Portfolio</h1>
+    <p>Capturing moments, one shot at a time</p>
+  </header>
+  <main>
+    <div class="gallery" id="gallery"></div>
+  </main>
+  <footer>
+    <p>© 2024 Taseen Kamil Rahman. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    const gallery = document.getElementById('gallery');
+    const username = 'Taseen18';
+    const repo = 'Taseen18.github.io';
+    const baseDir = 'photos';
+  
+    // Fetch the contents of a directory
+    async function fetchDirectoryContents(directory) {
+      const apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/${directory}`;
+      try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch directory: ${directory}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(error);
+        return [];
+      }
+    }
+  
+    // Recursively fetch all photos from directories
+    async function fetchAllPhotos(directory) {
+      const contents = await fetchDirectoryContents(directory);
+      let photos = [];
+  
+      for (const item of contents) {
+        if (item.type === 'file' && /\.(jpg|jpeg|png|gif)$/i.test(item.name)) {
+          // If it's a file and an image, add it to the list
+          photos.push(item.path);
+        } else if (item.type === 'dir') {
+          // If it's a directory, fetch its contents recursively
+          const subPhotos = await fetchAllPhotos(item.path);
+          photos = photos.concat(subPhotos);
+        }
+      }
+      return photos;
+    }
+  
+    // Populate the gallery with images
+    async function populateGallery() {
+      const photos = await fetchAllPhotos(baseDir);
+      photos.forEach(photo => {
+        const img = document.createElement('img');
+        img.src = `https://raw.githubusercontent.com/${username}/${repo}/main/${photo}`;
+        img.alt = 'Photography by Taseen';
+        gallery.appendChild(img);
+      });
+    }
+  
+    populateGallery();
+  </script>
+  
+</body>
+</html>
